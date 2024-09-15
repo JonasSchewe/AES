@@ -277,22 +277,22 @@ module aes_sbox(
     assign sbox[13][15] = 8'h9e;
 
     // Row 14
-    assign    sbox[14][0] = 8'he1;
-    assign    sbox[14][1] = 8'hf8;
-    assign    sbox[14][2] = 8'h98;
-    assign    sbox[14][3] = 8'h11;
-    assign    sbox[14][4] = 8'h69;
-    assign    sbox[14][5] = 8'hd9;
-    assign    sbox[14][6] = 8'h8e;
-    assign    sbox[14][7] = 8'h94;
-    assign    sbox[14][8] = 8'h9b;
-    assign    sbox[14][9] = 8'h1e;
-    assign    sbox[14][10] = 8'h87;
-    assign    sbox[14][11] = 8'he9;
-    assign    sbox[14][12] = 8'hce;
-    assign    sbox[14][13] = 8'h55;
-    assign    sbox[14][14] = 8'h28;
-    assign    sbox[14][15] = 8'hdf;
+    assign sbox[14][0] = 8'he1;
+    assign sbox[14][1] = 8'hf8;
+    assign sbox[14][2] = 8'h98;
+    assign sbox[14][3] = 8'h11;
+    assign sbox[14][4] = 8'h69;
+    assign sbox[14][5] = 8'hd9;
+    assign sbox[14][6] = 8'h8e;
+    assign sbox[14][7] = 8'h94;
+    assign sbox[14][8] = 8'h9b;
+    assign sbox[14][9] = 8'h1e;
+    assign sbox[14][10] = 8'h87;
+    assign sbox[14][11] = 8'he9;
+    assign sbox[14][12] = 8'hce;
+    assign sbox[14][13] = 8'h55;
+    assign sbox[14][14] = 8'h28;
+    assign sbox[14][15] = 8'hdf;
 
     // Row 15
     assign sbox[15][0] = 8'h8c;
