@@ -8,8 +8,8 @@
     This module does the substitution of bytes in the s-box. Its pure combinational logic.
 */
 module aes_sbox(
-    input wire[127 : 0] state_in, // The input state - linear array of 128 bits
-    output wire[127 : 0] state_out // The input state - linear array of 128 bits after byte substitution of S-Box
+    input wire[0 : 127] state_in, // The input state - linear array of 128 bits
+    output wire[0 : 127] state_out // The input state - linear array of 128 bits after byte substitution of S-Box
 );
 
 
@@ -17,7 +17,7 @@ module aes_sbox(
     genvar subByte;
     generate
         for (subByte = 0; subByte < 16; subByte = subByte + 1) begin : substition_assignment
-            assign state_out[(subByte * 8) + 7 : (subByte * 8)] = sbox[state_in[(subByte * 8) + 7 : (subByte * 8) + 4]][state_in[(subByte * 8) + 3 : (subByte * 8)]];
+            assign state_out[(subByte * 8) : (subByte * 8) + 7] = sbox[state_in[(subByte * 8) + 4 : (subByte * 8) + 7]][state_in[(subByte * 8) : (subByte * 8) + 3]];
         end
     endgenerate
 
